@@ -219,3 +219,11 @@ body {
 	box-shadow: 0 5px 0 0 #C42A2A;
 	cursor: pointer;
 }
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	z-index: 100;
+}
