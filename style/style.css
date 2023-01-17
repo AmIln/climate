@@ -41,6 +41,10 @@
 	src: url(../assets/fonts/Bebas_Neue/BebasNeue__Cyrillic.ttf);
 }
 
+html {
+	overflow-x: hidden;
+}
+
 *,
 *::before,
 *::after {
@@ -74,6 +78,7 @@ body {
 	scroll-behavior: smooth;
 	text-rendering: optimizeSpeed;
 	line-height: 1.5;
+	overflow-x: hidden;
 }
 
 ul[class],
@@ -291,12 +296,14 @@ body {
 }
 
 .description {
-	width: 60%;
 	font-family: "Bebas Neue";
 	font-style: mixed;
 	font-size: 40px;
 	line-height: 55px;
 	margin-bottom: 42px;
+}
+h1 {
+	width: 60%;
 }
 
 .list {
@@ -332,7 +339,7 @@ body {
 	display: flex;
 	align-items: center;
 	gap: 20px;
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 }
 
 .orderWrapper-description {
@@ -450,4 +457,105 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+/* BRANDS */
+.brands {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 53px;
+	padding: 135px 0 195px 0;
+}
+
+h2 {
+	text-align: center;
+}
+
+.brands-wrapper {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 30px;
+	justify-self: flex-start;
+}
+.brands-wrapper__item {
+	width: 255px;
+	height: 141px;
+	background-color: #F0F4F7;
+	border: 15px solid #F0F4F7;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+.brands-wrapper__item_active {
+	background-color: #DEFAFF;
+	border: 15px solid #DEFAFF;
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+}
+.brands-wrapper__item:nth-child(1) {
+	background-image: url(/assets/image/kentatsu.png);
+}
+.brands-wrapper__item:nth-child(2) {
+	background-image: url(/assets/image/daichi.png);
+}
+.brands-wrapper__item:nth-child(3) {
+	background-image: url(/assets/image/daikin.png);
+}
+.brands-wrapper__item:nth-child(4) {
+	background-image: url(/assets/image/quattroclima.png);
+}
+.brands-wrapper__item:nth-child(5) {
+	background-image: url(/assets/image/lessar.png);
+}
+.brands-wrapper__item:nth-child(6) {
+	background-image: url(/assets/image/fujitsu.png);
+}
+
+.arrow-wrapper {
+	display: flex;
+	gap: 10px;
+	margin-left: auto;
+}
+.arrow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 38px;
+	height: 38px;
+	border: 1px solid #DC2F2F;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+}
+.arrow_disable {
+	border: 1px solid #DBDBDB;
+}
+
+.img-svg {
+	width: 8px;
+	height: 16px;
+	display: inline-block;
+	background: #DC2F2F;
+	-webkit-mask-image: url(/assets/icon/arrow_left.svg);
+	mask-image: url(/assets/icon/arrow_left.svg);
+}
+.img-svg_disable {
+	background: #DBDBDB;
+}
+.img-svg_right {
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
 }
