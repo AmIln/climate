@@ -395,12 +395,16 @@ body {
 	padding: 0 20px;
 }
 
-.present-background {
+.background-images {
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: -170px;
 	width: 770px;
 	height: 658px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .circle {
@@ -417,20 +421,20 @@ body {
 .circle__small {
 	width: 266px;
 	height: 266px;
-	top: 25%;
-	right: 13%;
 }
 .circle__big {
 	width: 474px;
 	height: 474px;
-	top: 10%;
-	right: 0;
 }
 .image-leaves {
 	position: absolute;
 	z-index: 90;
-	top: 0;
-	right: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(/assets/image/leaves.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	transform: rotate(180deg);
 	-webkit-transform: rotate(180deg);
 	-moz-transform: rotate(180deg);
@@ -440,6 +444,10 @@ body {
 .image-conditioner {
 	position: absolute;
 	z-index: 98;
-	top: 27%;
-	right: 0;
+	width: 450px;
+	height: 258px;
+	background-image: url(/assets/image/conditioner.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
