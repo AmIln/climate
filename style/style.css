@@ -237,6 +237,9 @@ body {
 	height: 50px;
 	background-color: #000000;
 }
+.logoGroup-line__white {
+	background-color: #FFFFFF;
+}
 .logoGroup-text {
 	width: 220px;
 	word-break: auto;
@@ -276,6 +279,7 @@ body {
 }
 
 .main {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -287,6 +291,9 @@ body {
 	width: 1200px;
 	display: flex;
 	flex-direction: column;
+}
+.container_full {
+	width: 100%;
 }
 
 .container-present {
@@ -481,6 +488,9 @@ h2 {
 .brands-wrapper__item {
 	width: 255px;
 	height: 141px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: #F0F4F7;
 	border: 15px solid #F0F4F7;
 	border-radius: 10px;
@@ -488,9 +498,9 @@ h2 {
 	-moz-border-radius: 10px;
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
-	background-position: center;
+	/*background-position: center;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: contain;*/
 	filter: grayscale(100%);
 	-webkit-filter: grayscale(100%);
 }
@@ -500,22 +510,29 @@ h2 {
 	filter: grayscale(0);
 	-webkit-filter: grayscale(0);
 }
-.brands-wrapper__item:nth-child(1) {
+.brands-image {
+	width: 90%;
+	height: 90%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.brands-image_kentatsu {
 	background-image: url(/assets/image/kentatsu.png);
 }
-.brands-wrapper__item:nth-child(2) {
+.brands-image_daichi {
 	background-image: url(/assets/image/daichi.png);
 }
-.brands-wrapper__item:nth-child(3) {
+.brands-image_daikin {
 	background-image: url(/assets/image/daikin.png);
 }
-.brands-wrapper__item:nth-child(4) {
+.brands-image_quattroclima {
 	background-image: url(/assets/image/quattroclima.png);
 }
-.brands-wrapper__item:nth-child(5) {
+.brands-image_lessar {
 	background-image: url(/assets/image/lessar.png);
 }
-.brands-wrapper__item:nth-child(6) {
+.brands-image_fujitsu {
 	background-image: url(/assets/image/fujitsu.png);
 }
 
@@ -558,4 +575,102 @@ h2 {
 	-moz-transform: rotate(180deg);
 	-ms-transform: rotate(180deg);
 	-o-transform: rotate(180deg);
+}
+
+/* SERVICES */
+.services {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 71px;
+}
+.services > h2 {
+	width: 1100px;
+	margin: 0;
+}
+
+.services-wrapper {
+	width: 100%;
+	height: 390px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.services-list {
+	height: 100%;
+	width: 40%;
+}
+.services-list_choise {
+	height: 33%;
+	font-family: "Bebas Neue";
+	font-size: 25px;
+	line-height: 35px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 40px;
+}
+.services-list_choise__active {
+	background: #DEFAFF;
+}
+.services-list_choise > p {
+	width: 250px;
+}
+
+.specification-list {
+	width: 60%;
+	height: 100%;
+	border-radius: 10px 0px 0px 10px;
+	-webkit-border-radius: 10px 0px 0px 10px;
+	-moz-border-radius: 10px 0px 0px 10px;
+	-ms-border-radius: 10px 0px 0px 10px;
+	-o-border-radius: 10px 0px 0px 10px;
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.specification-list:nth-child(1) {
+	background-image: linear-gradient(90.49deg, #DEFAFF 0.4%, rgba(255, 255, 255, 0) 99.57%), url(/assets/image/installation-conditioner1.jpg);
+}
+.specification-list:nth-child(2) {
+	background-image: linear-gradient(90.49deg, #DEFAFF 0.4%, rgba(255, 255, 255, 0) 99.57%), url(/assets/image/installation-conditioner.png);
+}
+.specification-list:nth-child(3) {
+	background-image: linear-gradient(90.49deg, #DEFAFF 0.4%, rgba(255, 255, 255, 0) 99.57%), url(/assets/image/installation-conditioner2.jpg);
+}
+.specification-list_choise {
+	display: none;
+}
+.specification-list_choise__active {
+	max-width: 450px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 15px;
+	height: 100%;
+	padding-left: 50px;
+}
+.specification-list_choise > p {
+	font-family: "Montserrat";
+	font-size: 18px;
+	line-height: 28px;
+}
+
+footer {
+	width: 100%;
+	height: 170px;
+	background-color: #333333;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 135px;
+}
+.footer-container {
+	width: 1200px;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
 }
